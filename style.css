@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item{
+    height:75vh;
+    
+}
+
+.s1{
+    /* height:95vh; */
+    background-image: url('/Boot/Pictures/cvr.jpg');
+    background-size: cover;
+    width:100%;
+    height: 100%;
+
+}
+
+.masthead-brand{
+    float:right;
+    font-family: 'Pangolin', cursive;
+    font-size: 60px;  
+}
+
+ .cover{ 
+     float:right; 
+     height: 100%;
+ }
+
+
+.jumbotron{
+    background-color: rgb(65, 88, 114); 
+    color:white
+    } 
+
+.card-body{
+    color:black;
+    text-align: center;
+}
+
+h5{
+    color: rgb(4, 54, 108);
+}
+
+/* (h5 tag what we offer) */
+#a{ 
+    color:rgba(6, 59, 66, 0.648);
+}
+
+.s2{
+    background-color: rgb(128, 91, 62);
+}
+
+
+.s3{
+    color: white;
+    text-align: center;
+    background-color: rgb(73, 75, 67);
+}
+
+
+.material-symbols-outlined{ 
+    font-size: 448px;
+ }
+
+ /****************** best school styling */
+ #b{
+    text-align: center;
+    padding-bottom: 15px;
+ }
+
+ /****************************** about text in that page */
+#d{
+    text-align: right;
+    font-size: 50px;
+    color:white;
+}
+
+.card-img{
+    width:100%vw;
+    height:420px;
+}
+
+.s4{
+    padding: 3px 0px;
+    background-color: rgb(67, 96, 96);
+}
+
+/************************************* team flip affect code here */
+.card-wrapper{
+    height:400px;
+    width: 300px;
+    perspective: 1000px;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style:preserve-3d;
+}
+
+.card-wrapper:hover .content{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.face-front, .face-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color:black;
+    backface-visibility: hidden;
+}
+
+.face-back{
+    transform: rotateY(180deg);
+}
+/************************************** till here our team code */
+
+.e{
+    margin-right: 3px;
+}
+
+
+
+
+/*********************************************** Lessons Styling Begins here */
+
+.s5{
+    background-color: rgb(18, 91, 91);
+    color:#fff
+}
+
+/************************************** hr tag in lessons styling */
+.f{
+    border: 1px solid white;
+}
+
+
+
+
+/***************************************************************** contact page styling here */
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(119, 112, 112);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color:#fff;
+}
+
+.g{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.g .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.g  .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.g .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.g .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:#fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.g .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+
+.contactForm .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputbox input,
+.contactForm .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+
+.contactForm .inputbox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputbox input:focus ~span,
+.contactForm .inputbox input:valid ~span,
+.contactForm .inputbox textarea:focus ~span,
+.contactForm .inputbox textarea:valid ~span{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+
+.contactForm .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    font-size: 18px;
+}
