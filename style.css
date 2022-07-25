@@ -11,7 +11,7 @@
 
 .s1{
     /* height:95vh; */
-    background-image: 'Pictures/cvr.jpg';
+    background-color:'#666';
     background-size: cover;
     width:100%;
     height: 100%;
